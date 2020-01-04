@@ -1,0 +1,228 @@
+ 
+body{
+	margin:0;
+	padding:0;
+
+}
+
+h1{
+  font-family: "Avant Garde","Avantgarde","Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  color: black; 
+  text-decoration:none;
+}
+
+
+h2,h3,h4,p,a{
+  font-family: "Avant Garde","Avantgarde","Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+#head-container a{
+	text-decoration: none;
+	padding:20px;
+}
+
+nav{
+	width:100%;
+	height:100px;
+	color:black;
+	font-size:25px;
+	float:left;
+}
+
+nav ul li{
+	float:left;
+	list-style: none;
+}
+
+nav ul li a{
+	display:block;
+	color:black;
+	font-size:25px;
+	float:left;
+	padding: 20px 20px;
+	text-decoration:none
+}
+
+
+/*FIRIMU BOARD */
+
+ .board-container{
+	margin:30px;
+	width:41%;
+	border: 5px solid black;
+	
+}
+
+ .board-slide{
+	display:flex;
+	width:100%;
+	height: 1232px;
+}
+
+
+
+
+
+/* EXPLORE PAGE */
+
+/*-----Galler Container-----*/
+/*using a CSS Grid*/
+
+.wrapper-gallery{
+	margin: 0 20vw;
+}
+
+#explore-gallery{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:auto;
+	grid-gap:10px;
+	grid-template-areas:
+	"img1 img2"
+	"img3 img4"
+	"img5 img6"
+	"img7 img8"
+	"img9 img10";
+}
+
+#explore-gallery .gallery-image{
+	width:100%;
+	height:400px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	cursor:zoom-in;
+}
+
+/*images*/
+#explore-gallery h2{
+	grid-area: gallery-h2;
+}
+
+#explore-gallery .img1{
+	grid-area: img1;
+	background-image: url(../Explore-Images/CNV00017.JPG);
+}
+
+#explore-gallery .img2{
+	grid-area: img2;
+	background-image: url(../Explore-Images/CNV00020.JPG);
+}
+
+#explore-gallery .img3{
+	grid-area: img3;
+	background-image: url(../Explore-Images/img013.jpg);
+}
+
+#explore-gallery .img4{
+	grid-area: img4;
+	background-image: url(../Explore-Images/CNV00022.JPG);
+}
+
+#explore-gallery .img5{
+	grid-area: img5;
+	background-image: url(../Explore-Images/img021.jpg);
+}
+
+#explore-gallery .img6{
+	grid-area: img6;
+	background-image: url(../Explore-Images/CNV00054.JPG);
+}
+
+#explore-gallery .img7{
+	grid-area: img7;
+	background-image: url(../Explore-Images/CNV00069.JPG);
+}
+
+#explore-gallery .img8{
+	grid-area: img8;
+	background-image: url(../Explore-Images/img028.jpg);
+}
+
+#explore-gallery .img9{
+	grid-area: img9;
+	background-image: url(../Explore-Images/img058.jpg);
+}
+
+#explore-gallery .img10{
+	grid-area: img10;
+	background-image: url(../Explore-Images/img112.jpg);
+}
+
+/*gallery titles*/
+.gallery-image div{
+	width:100%;
+	height:50%;
+	background-color: black;
+	opacity:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.gallery-image a{
+	font-family: sans-serif;
+	font-size:20px;
+	color: white;
+	text-decoration:none /*remove underline*/
+	
+}
+
+.gallery-image div:hover {
+	opacity:0.8;
+	transition: ease all 100ms;
+}
+
+/* FORM*/
+
+form{
+	width: 800px;
+	font-family: "Avant Garde","Avantgarde","Century Gothic";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+form form-field{
+	display:flex;
+	padding: 0px 20px;
+	margin: 20px	
+}
+
+form input{
+	width:100%;
+	outline:none;
+	margin:20px 20px;
+	padding: 20px 20px;
+}
+
+form select{ 
+	width:20%;
+	outline:none;
+	margin: 20px 20px;
+	padding: 20px 20px;
+}
+
+form textarea{
+	resize:none;
+	width:80%;
+	outline:none;
+	margin:20px 20px;
+	padding: 20px 20px;
+}
+
+form input[type =submit]{
+	height: 50px;
+	width: 200px;
+}
+
+form input[type =file]{
+	
+}
+
