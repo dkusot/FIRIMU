@@ -7,7 +7,10 @@
 		</title>
 	</head>	
 	<body> 	
-
+	<div class="wrapper">	
+		
+		
+	<div id="content-container">
 	<div id="head-container">
 		<div class="row">
 			<header>
@@ -18,6 +21,10 @@
 	
 	<nav id="main-nav">
 	<ul>
+		<li><a
+		href="index.html">FIRIMU BOARD</a>
+		</li>
+			   
 		<li><a
 		href="Explore.html">EXPLORE</a>
 		</li>
@@ -36,7 +43,8 @@
 	</ul>
 	</nav>	
 		
-	
+	<section id="report">
+		
     <h2>
 	Report: Coursework 
 	DENISE KUSOTERA  
@@ -57,16 +65,19 @@
 		
 		</h2>
 		<p>
-		The target audience are analogue photography at any skill level. <br>
-		I was mainly inspired by my own experiences online; I shoot and developed my own film and own 20 analogue cameras. There are so many questions that come along when using old cameras and developing your own film at home, I rely a lot on forums and blogs but never found a site with everything I needed all in one place. <br>
-		I wanted to create a site that allows photographers to showcase their work and engage in constructive dialogue around creativity. I think that platforms like Instagram don’t actually accommodate artists, it’s incredibly superficial as opinions are influenced by followers and likes and recently Instagram’s community guidelines exclude certain artistic styles. <br>
+		The target audience are analogue photography at any skill level. <br><br>
+		I was mainly inspired by my own experiences online; I shoot and developed my own film and own 20 analogue cameras. There are so many questions that come along when using old cameras and developing your own film at home, I rely a lot on forums and blogs but never found a site with everything I needed all in one place. 
+		I wanted to create a site that allows photographers to showcase their work and engage in constructive dialogue around creativity. I think that platforms like Instagram don’t actually accommodate artists, it’s incredibly superficial as opinions are influenced by followers and likes and recently Instagram’s community guidelines exclude certain artistic styles. <br> <br> 
+			
+			
 		When creating the site, I had three main websites in mind; <br>
-		-	https://www.tumblr.com/ <br>
+		-	https://www.tumblr.com/ <br> 
 		-	https://parallaxphotographic.coop/ <br>
-		-	https://andredwagner.com/ <br>
-		Tumblr is claims to be focussed on community and brands itself as being open to individuality and self-expression. I wanted to adopt features that they have implemented which help them deliver a platform that satisfies their claims and meets the needs of their users. <br>
-		Parallax Photographic Coop’s use a modern and clean design with a pastel colour pallet for their online store. It’s a beautiful artistic design and different from other analogue photography suppliers who frequently dated or industrial aesthetic.  Although it acts primarily as an ecommerce site, they include a community page with photography submissions from customers. <br>
-		Andre D Wanger is a professional photographer, I’m a fan of his work and appreciate the design of his online portfolio. The home page has a gallery feature and no scrolling, this is something I wanted to incorporate on my own site so users can interact with each piece individually before moving on. I wanted to remove scroll features on most social sites like Instagram, Tumblr etc and control the amount of content in the feed. <br>
+		-	https://andredwagner.com/ <br><br>
+		Tumblr focusses on community and brands itself as being open to individuality and self-expression. I wanted to adopt features that they have implemented which help them deliver a platform that satisfies their claims and meets the needs of their users. <br><br>
+			
+		Parallax Photographic Coop’s use a modern and clean design with a pastel colour pallet for their online store. It’s a beautiful artistic design and different from other analogue photography suppliers who frequently dated or industrial aesthetic.  Although it acts primarily as an ecommerce site, they include a community page with photography submissions from customers. <br><br>
+		Andre D Wanger is a professional photographer, I’m a fan of his work and appreciate the design of his online portfolio. The home page has a gallery feature and no scrolling, this is something I wanted to incorporate on my own site so users can interact with each piece individually before moving on. I wanted to remove scroll features on most social sites like Instagram, Tumblr etc and control the amount of content in the feed.
 
 		</p>
 
@@ -77,7 +88,32 @@
 		<strong> Planning </strong>
 		</h2>
 		<p> 
-		• What type of structure did you choose to implement? • Give (at least) 3 ways in which you have ensured accessibility for your website. If you have used a WCAG tool, or evaluated it manually, give the results of that evaluation. • Give 3 ways in which you have considered usability on your site. 
+		
+		I chose to implement a structure a Hierarchical Structure allowing users to navigate from my Index Page (a showcase page) through the navigation bar and links into 4 other main sections including the Explore Page, Marketplace, Film Developing and Submissions page. 
+			
+		I thought that this would be an appropriate structure for the best user experience as this allows easy access to all main sections. <br>
+			
+		<br>
+		
+		I ensured web accessibility for visitors with visual disabilities, audible dissabilities and cognitive and neurological disabilities. <br>
+		
+		<br>	
+			
+		My most obvious design choice was sticking to a black and white colour scheme for the page, I was considering users with visual impairments affecting contrast sensitivity as well as a pallete that would no distract from the images.<br><br>
+		
+		I also chose of san-serif fonts once again to accomodate visually impaired users as well as dyslexic users. When writing my HTML code I used wrappers for my page content and set a percentage width to allow users to adjust page sizes affecting both text size and line length. I used page zoom and made sure that text and images/videos adjusted seamlessly therefore accomodating users that may requirelarger text sizes. <br>
+			
+		<br>
+			
+		Finally in my HTML I included text alteratives for all images as they are read aloud by screen readers. <br><br>
+			
+		My aim was so build a simple intuative design and my first consideration was using the heirachial structure as it's the most common structure online and so my users would be familiar with it. <br><br>
+			
+		The website only has 5 web pages so naturally I could design a simple menu located at the top of the website. Other links assisting with navigation and included in the body are highlighted using bold text and key words click "here". Guiding the user through the website is a contributer to a good user experience and I think I excuted this well.<br><br>
+			
+		 I was able to keep a consisent layout through CSS by styling similar elements the same across the websites  including margins, padding and text alignment. <br><br>
+			
+		I also built a responsive design to ensure that the website is optimized for any device. Images are resizable and the layout is flexible. it is key for the user t be able to view all the content on the page clearly and well presented.
 		</p>
 	</div>
 
@@ -86,7 +122,16 @@
 		<strong> Implementation </strong>
 		</h2>
 		<p>
-		• State 3 things that you had to learn or research when creating the website. How did you find them out? From where? Did you take the examples directly, or did you modify them? • What resources does your work use? What libraries, plugins, are included? 
+			
+		I relied on mainly online Youtube Tutorials when creating elements I was unfamiliar with. I made use of tutorials for creating the carousel and the gallery for my Explore page. <br><br>
+		
+		When creating the carousel the online tutorial was great for understanding the general concept, I encountered some errors when using the images in HTML as instructed by the tutorial. I couldn't figure out my own error so i included them in the JS code instead by populating an array with the images using their locations and using a function that changes the images in the carousel by iterating through the array locations. <br><br>
+			
+		
+		For the gallery I learned how to use the grid element and implement the hover transition. For my own website created a grid with only 2 coloums and designed the CSS to create a similar vertical feed of that of the Instagram Explore page unlike the tutorial which designed a grid of a 3 by 2 horizontal gallery. <br><br>
+			
+		A simple thing I learned was implementing Youtube videos using the HTML iframe tag. I wasn't familiar with this tag. At first I used the HTML video tag, and I encountered an error saying "Youtube wont connect" in the places where my media should have been. From previous experience of embedding APIs I decided to go onto the share option on the Youtube videos and found the right code. <br><br>
+		
 		</p>
 	</div>
 
@@ -95,7 +140,17 @@
 		<strong> Evaluation </strong>
 		</h2>
 		<p>
-		• State 3 things that you think worked particularly well in your work • State 3 things that you think might be improved. How would you do them differently another time? How would you fix them given more time now?
+			
+		On my page Firimu Board I was particularly impressed by my image carousel, I particularly like that users can use the buttons to navigate manually through it or have the carousel on a 6 second timer. It achieves the goal of showcasing user submissions. I also think the overall design for the Explore page and the Marketplace work well. <br><br>
+			
+		With more time I would most likely still focus on all 3 of the pages as they are the main aspects behind the concept of the website. <br> <br>
+			
+		I would place the buttons of the carousel so that they overlay on top of the images and would also add javascript code to allow each imaged to be enlarged  and viewed separately. <br><br>
+		
+		In the Explore page I would re-design a grid that allows images to be different sizes, images could be viewed individually and a blurb from the user who made the submission would be visible by clicking the image. I'd include a pop up form for users to input feeback about submissions instead of simply relying on external social media. <br><br>
+			
+		Finally in my Marketplace I would a shopping basket for purchases instead of having to use an email.
+			
 		</p>
 	</div>
 
@@ -104,7 +159,15 @@
 		<strong> References </strong>
 		</h2>
 		<p>
-		• List all sources of information and code that you used to prepare the website. This should use a consistent format. You’ll find a suggested format, with examples, further down this document. 
+		
+		[1] Parallax Photopgraphic Coop, "How To Develop Colour Film", 2017[Online], Available: https://parallaxphotographic.coop/how-to-develop-colour-film/[Accessed: January 2020] <br>
+		
+		[1] Dev Ed,"How To Create An Image Slider in HTML, CSS, Javascript", 2018, Available: https://www.youtube.com/watch?v=KcdBOoK3Pfw [Accessed:December-2019]<br>
+			
+		[1] mmtus, "Gallery Using HTML, CSS, And JavaScript|hw To Open Images Using JavaScript| JavaScript Tutorial, 2019, Available: https://www.youtube.com/watch?v=dkLpo4shS6c&t=1806s [Accsessed:December-2019]
+			
+		[1] https://petapixel.com/2014/05/29/70-inspirational-quotes-photographers/,"70 inspirational quotes for photography",2014,[Accessed: January 2020]
+		 
 		</p>
 	</div>
 
@@ -113,9 +176,48 @@
 		<strong>Appendices </strong>
 		</h2>
 		<p>
-		Site Map • Wireframes (if you change design while building the site, include both original and modified diagrams) • Screenshot of the report from the W3C markup validator at https://validator.w3.org/ when run on the submitted version of your site.
+			
+		Site Map<br>
+		
+		<img src="Report-Images/Wireframe.JPG" width="800";
+			
+		<br><br>
+		
+		Intial Wireframe Designs<br>
+			
+		<img src="Report-Images/Wireframe-Board.png" width="800"> <br>
+		<img src="Report-Images/Wireframe-Development.png" width="800"> <br>
+		<img src="Report-Images/Wireframe-Explore.png" width="800"> <br>
+		<img src="Report-Images/Wireframe-Marketplace.png" width="800"> <br>
+		<img src="Report-Images/Wireframe-Submission.png" width="800"> <br>
+			
+		<br><br>
+			
+		Final Wireframe Designs<br>
+			
+		<img src="Report-Images/Final-WF-Board.png" width="800"><br>
+		<img src="Report-Images/Final-WF-Explore.png" width="800"><br>
+		<img src="Report-Images/Final-WF-Marketplace.png" width="800"><br>
+		<img src="Report-Images/Final-WF-Submissions.png" width="800"> <br>
+			
+		<br><br>
+			
+		W3C Markup Validator Screenshots <br>
+			
+		<img src="Report-Images/Validator-Index.png" width="800"> <br>
+		<img src="Report-Images/Validator-Explore.png" width="800"> <br>
+		<img src="Report-Images/Validator-Marketplace.png" width="800"> <br>
+		<img src="Report-Images/Validator-FilmDeveloping.png" width="800"> <br>
+		<img src="Report-Images/Validator-Submissions.png" width="800"> <br>
+	
 		</p>
+		
 	</div>
-
+	</section>	
+		
+		
+	</div>
+	</div>
+	
 	</body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en-GB">
  <head>
 	 <meta charset = "utf-8">
 	 <meta name ="viewport"
@@ -8,7 +8,10 @@
 	 <title>FIRIMU</title>
  </head>
  <body>
-	
+<!--Main Body-->
+ <div class="wrapper">
+	 
+	<div id="content-container">
 	<div id="head-container">
 		<div class="row">
 			<header>
@@ -16,10 +19,14 @@
 			</header>
 	</div>
 	</div>
-	
+<!--Navigation Bar-->
 	<nav id="main-nav">
 	<ul>
 	
+		<li><a
+		href="index.html">FIRIMU BOARD</a>
+		</li>
+		
 		<li><a
 		href="Explore.html">EXPLORE</a>
 		</li>
@@ -37,25 +44,27 @@
 		</li>
 	</ul>
 	</nav>
-		
+	<!--Form defined for user submisions, inclduing text,option and file inputs. Including 2 submission categories - one for the Marketplace and another for the Firimu Board-->	
 	<div class="row">
 	<form id="submission-form">
-		<h2> Make A Submission</h2>
-		<form>
-		<form-field>
-		<label for="contributorName">Full Name:</label>	
-		<input name="contributorName" type="text" placeholder="What should we call you?">
-		</form-field>
-		<form-field>
-		<label for="contributorSocial">Instagram:</label>	
-		<input name="contributorSocial" type="text" placeholder="Where can people find you?">
-		</form-field>
-		<form-field>
-		<label for="contributorEmail">Email:
-		</label>	
-		<input name="contributorEmail" type="email" placeholder="What's your email address?"min="1" max="25">
-		</form-field>
-		<form-field>
+		<h2> <strong>Make A Submission </strong></h2>
+ 	<!--Text detailing what type of submissions are accepted and linking to the FIRIMU BOARD and Markteplace-->
+		<div>	
+		<p> FIRIMU is a platform made for photographers at every level - so wether you're new to the game or an expert - we welcome your submissions! <br><br>
+		
+		All submissions have a chance of featuring on the on our FIRIMU BOARD, check it out<a href="index.html"><strong> HERE</strong></a>! All submisions for camera'f for sale will show on our Marketplace <a href="Marketplace.html"><strong> HERE</strong></a>. You'll recieve an email confirming wether your submission has been accepted. <br>
+		</p>
+		</div>
+		<div>
+		<input name="contributorName" type="text" placeholder="Full Name">
+		</div>
+		<div>	
+		<input name="contributorSocial" type="text" placeholder="Instagram">
+		</div>
+		<div>	
+		<input name="contributorEmail" type="email" placeholder="Email">
+		</div>
+		<div>
 		<label>Submission Category:</label>
 		<select>
 		<option value="board"> Firimu Board
@@ -63,25 +72,33 @@
 		<option value="sale"> Marketplace
 		</option>
 		</select>
-		</form-field>
-		<form-field>
-		<label> Upload:
-		</label>
-		<input type="file" name="submissionUpload" value="submissionUpload">
-		</form-field>
-		<form-field>
-		<label for="uploadInfo">Information:
-		</label>
-		<textarea name="uploadInfo" type="text" placeholder="Tell us more about your submission.">
-		</textarea>
-		</form-field>
-		<form-field> 
+		</div>
+		<div>
+		<input type="file" name="submissionUpload">
+		</div>
+		<div>
+		<input name="contributorName" type="text" placeholder="Tell Us About Your Submision">
+		</div>
+		<div> 
 		<input name="submit" type="submit" value="Submit!">
-		</form-field>
-		</form>
+		</div>
 	</form>
 	</div>
 		
+<!-- Social media icon sidebar -->
+   
+	<nav id="social-buttons">
+      <a href ="https://twitter.com">
+        <img src="./imgs/twitter-icon.svg" alt="twitter icon">
+      </a>
+      <a href ="https://instagram.com">
+        <img src="./imgs/instagram-icon.svg" alt="instagram icon">
+      </a>
+      <a href ="https://en-gb.facebook.com">
+        <img src="./imgs/facebook-icon.svg" alt="facebook icon">
+      </a>
+    </nav>	
+<!--Footer-->
 	<div class = "row">
 		<footer id="footer-right">
 		<p>
@@ -89,6 +106,7 @@
 			#filmisnotdead </p>
 		</footer>
 	</div>	
-		
+	</div>	
+ </div>
  </body>
 </html>

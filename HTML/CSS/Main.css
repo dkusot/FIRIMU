@@ -1,8 +1,15 @@
- 
-body{
-	margin:0;
-	padding:0;
+/*This page  acts as the main CSS for the website, including the general styling and also styling for specific element on each page using element ids.*/
 
+/*All basic elements*/
+body{
+	padding-left:20px;
+	padding-right:20px;
+	font-size: 15px;
+}
+
+/*As wrapper width changes due to resizing pages, the contents of the page will adjust as the wrapper element encompassed everything*/
+.wrapper{
+	width:100%;
 }
 
 h1{
@@ -12,6 +19,7 @@ h1{
   font-size: 100px;
   color: black; 
   text-decoration:none;
+  margin-bottom:0;
 }
 
 
@@ -21,63 +29,104 @@ h2,h3,h4,p,a{
   font-weight: 400;
 }
 
+/*Styling for header - removing the underline of the title Firimu as it is a link to the main home page */
 
-#head-container a{
+#head-container a {
 	text-decoration: none;
-	padding:20px;
-}
-
-nav{
-	width:100%;
-	height:100px;
-	color:black;
-	font-size:25px;
-	float:left;
-}
-
-nav ul li{
-	float:left;
-	list-style: none;
-}
-
-nav ul li a{
-	display:block;
-	color:black;
-	font-size:25px;
-	float:left;
-	padding: 20px 20px;
-	text-decoration:none
-}
-
-
-/*FIRIMU BOARD */
-
- .board-container{
-	margin:30px;
-	width:41%;
-	border: 5px solid black;
 	
 }
 
- .board-slide{
-	display:flex;
+/*Setting the content container to 100% of the page width*/
+#content-container {
+  max-width: 100%;
+}
+
+/* Styling for navigation bar - stretch across full page width, remove link underline and purple colour, add padding*/
+#main-nav{
 	width:100%;
-	height: 1232px;
+	float:left;
+	padding-bottom:20px;
 }
 
-
-
-
-
-/* EXPLORE PAGE */
-
-/*-----Galler Container-----*/
-/*using a CSS Grid*/
-
-.wrapper-gallery{
-	margin: 0 20vw;
+#main-nav ul{
+	padding-left: 0px;
 }
 
+#main-nav ul li{
+	float:left;
+	list-style: none;
+	
+}
+
+#main-nav ul li a{
+	color:black;
+	font-size:18px;
+	padding-right:20px;
+	padding-left:0px;
+	text-decoration:none; 
+}
+
+/* style social media buttons and make them float on right side of the page and stay in a static position*/
+#social-buttons {
+  position: fixed;
+  top: 30vh;
+  right: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#social-buttons a {
+  display: block;
+  margin: 0.5em;
+  float:right;
+	
+}
+
+#social-buttons img {
+  height: 25px;
+  width: 25px;
+}
+
+/* styling for all button and input*/
+button, select, input{
+	font-family: "Avant Garde","Avantgarde","Century Gothic";
+ 	font-style: normal;
+  	font-weight: 400;
+	border-style:solid;
+	border-color: black;
+	background-color: white;
+	
+}
+
+/*Page specific styling*/
+
+/*------FIRIMU BOARD------*/
+
+/*Sets the board container to the total width of the page and the imgs in the carousel to 90% of the width - The board container being full width mean't that as the wrapper adjusts it would adjust too*/
+ .board-container{
+	width:100%;
+	
+}
+
+img.imgCarousel{
+	width:90%;
+}
+
+/*Styling for the qoutes above the board*/
+#quotes-board p{
+	font-size: 50px;
+	font-style: italic;
+	width:90%;
+}
+
+/*--------EXPLORE PAGE-------*/
+
+/*Set the section including the grid to 100% of the page width*/
+#explore-section{
+	width:100%;
+}
+
+/* Defines the grid structure defined in the HTML - the number of rows and coloums and the width or grid compared to page width. Defines which img popluates which grid area.    */
 #explore-gallery{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
@@ -89,20 +138,20 @@ nav ul li a{
 	"img5 img6"
 	"img7 img8"
 	"img9 img10";
+	width:90%;
 }
+
+/* Styles the grid areas defined in the HTML*/
 
 #explore-gallery .gallery-image{
 	width:100%;
 	height:400px;
 	background-repeat:no-repeat;
 	background-size:cover;
-	cursor:zoom-in;
+	cursor:pointer;
 }
 
-/*images*/
-#explore-gallery h2{
-	grid-area: gallery-h2;
-}
+/* Sets the background images in each area to include img at specific locations, therefore pollulating the grid and we can see the images show up in the structure*/
 
 #explore-gallery .img1{
 	grid-area: img1;
@@ -154,7 +203,7 @@ nav ul li a{
 	background-image: url(../Explore-Images/img112.jpg);
 }
 
-/*gallery titles*/
+/*Styling for the hover annimation that appears on top of the images - this is top layer*/
 .gallery-image div{
 	width:100%;
 	height:50%;
@@ -170,59 +219,132 @@ nav ul li a{
 	font-family: sans-serif;
 	font-size:20px;
 	color: white;
-	text-decoration:none /*remove underline*/
+	text-decoration:none 
 	
 }
 
+/*This allows a smooth transition for the hover by setting transition to occur 100 milli seconds in and out upon hover*/
 .gallery-image div:hover {
 	opacity:0.8;
 	transition: ease all 100ms;
 }
 
-/* FORM*/
+/*-----SUBMISIONS PAGE-------*/
 
-form{
-	width: 800px;
-	font-family: "Avant Garde","Avantgarde","Century Gothic";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 25px;
+/*Styling for links in paragraph about submissions and the form*/
+a{
+	text-decoration: none;
+	color:black;
 }
 
-form form-field{
-	display:flex;
-	padding: 0px 20px;
-	margin: 20px	
+form{
+	width: 100%;
+	font-family: "Avant Garde","Avantgarde","Century Gothic";
+	font-style: normal;
+	width:80%;
+	text-align;
+	
+}
+
+form label{
+	
 }
 
 form input{
-	width:100%;
+	width:50%;
 	outline:none;
-	margin:20px 20px;
-	padding: 20px 20px;
+	padding: 10px;
+	font: inherit;
+	margin-bottom: 15px;
+	
 }
+
+/*Styling for specific data inputs*/
 
 form select{ 
 	width:20%;
 	outline:none;
-	margin: 20px 20px;
-	padding: 20px 20px;
-}
-
-form textarea{
-	resize:none;
-	width:80%;
-	outline:none;
-	margin:20px 20px;
-	padding: 20px 20px;
+	padding: 10px 10px;
 }
 
 form input[type =submit]{
-	height: 50px;
-	width: 200px;
+	padding:10px;
+	width:auto;
 }
 
 form input[type =file]{
+	border:none;
+	margin-bottom: 15px;
+}
+
+form input[type =option]{
+	padding:10px;
+	width:auto;
+	margin-bottom:20px;
+}
+
+
+/*------MARKETPLACE PAG-----*/
+
+/* Styles galleries for camera advert sections, separating images using padding and aligns*/
+.gallery-cam img {
+  display: inline-block;
+  height: 300px;
+  width: 350px;
+  min-width: 100px;
+  padding: 20px
+}
+
+.gallery-cam{
+  text-align: center;
+  display: flex;
+  padding: 5px;
+}
+
+/*Styles a link which opens email link to look like a button*/
+.button-buy{
+	padding:10px;
+	border-color:black;
+	border: solid;
+}
+
+/*----FILM DEVELOPING PAGE-----*/
+
+/*Styles text on developing page to take 90% of page width*/
+#developing-info
+{
+	width:90%;
+}
+
+/*Styles youtube video links*/
+
+#online-vids{
+	width:100%;
+	display:block;
+}
+
+#colour-vid, #blackwhite-vid{
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+iframe{
+	border:none;
+}
+/*-----REPORT PAGE--*/
+
+@media only screen and (min-width: 768px){
+	.wrapper{
+}
 	
+	h1{
+  padding:20px 0px 0px;
+}
+
+
+h2,h3,h4,p,a{
+ padding:20px 0px 0px;
+}
+
 }
 

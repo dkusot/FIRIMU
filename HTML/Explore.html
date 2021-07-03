@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang = "en-GB">
+ <head >
 	 <meta charset = "utf-8">
 	 <meta name ="viewport"
-	  content = "width=device-width,intial-scale=1">
+	  content = "width=device-width,intial-scale=1.0">
 	 <link rel="stylesheet" href="CSS/Main.css">
 	 <title>FIRIMU</title>
  </head>
 
 	<body>
+	<!-- Main body-->
+	<div class=wrapper>
+		
+	<div id="content-container">
 	
-	<div id="head-container">
+		<div id="head-container">
 		<div class="row">
 			<header>
 				<a href=./index.html><h1> FIRIMU</h1></a>	
@@ -18,8 +22,13 @@
 	</div>
 	</div>
 		
+	
+	<!--Navigation Bar-->
 	<nav id="main-nav">
 	<ul>
+		<li><a
+		href="index.html">FIRIMU BOARD</a>
+		</li>
 	
 		<li><a
 		href="Explore.html">EXPLORE</a>
@@ -39,10 +48,11 @@
 	</ul>
 	</nav>
 	
-	//////////
-
-	<section id="explore-section">
-	<div id="explore-gallery" class="wrapper-gallery">
+	<!-- Gird Gallery -->
+	<!--Here there images arent uploaded but instead areas of the grid are given a unique class, each area also has the information about the photographer's that will appear overlaying the image when you hover. Image locations + transitions is all done in CSS -->
+	<div class = row>
+	<div id="explore-section">
+	<div id="explore-gallery">
 	<div class = "gallery-image img1">
 	 <div> <a href="#">Photographer: Denise Kusotera <br> Instagram: @vhitori</a></div>
 	</div>	
@@ -74,7 +84,29 @@
 	 <div> <a href="#">Photographer: Alice Kabonga <br> Instagram: @alice_kabonga</a></div>
 	</div>
 	</div>
-	</section>
+	</div>
+	</div>
+<!--Linking the explore page to the submisions page-->
+	<div>	
+		<p> Make a submisison <a href="Submissions.html"><strong> HERE</strong></a> !  <br>
+			
+		</p>
+		
+		</div>
+		
+		<!-- Social media icon sidebar -->
+   
+	<nav id="social-buttons">
+      <a href ="https://twitter.com">
+        <img src="./imgs/twitter-icon.svg" alt="twitter icon">
+      </a>
+      <a href ="https://instagram.com">
+        <img src="./imgs/instagram-icon.svg" alt="instagram icon">
+      </a>
+      <a href ="https://en-gb.facebook.com">
+        <img src="./imgs/facebook-icon.svg" alt="facebook icon">
+      </a>
+    </nav>
 		
 	<div class = "row">
 		<footer id="footer-right">
@@ -84,5 +116,7 @@
 		</footer>
 	</div>	
 	
+</div>
+</div>
 </body>
 </html>
